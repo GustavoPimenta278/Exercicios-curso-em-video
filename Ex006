@@ -7,7 +7,7 @@
     <title>Eventos DOM</title>
     
     <style>
-        div#quadrado {
+        .estiloQuadrado {
             background: rgb(109, 109, 236);
             color: white;
             width: 200px;
@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <div id="quadrado">
+    <div id="quadrado" class='estiloQuadrado'>
         Olá!
     </div>
     
