@@ -16,7 +16,6 @@
             text-align: center;
             border: solid rgb(24, 22, 22);
             border-radius: 30px;
-            
         }
     </style>
 </head>
@@ -43,14 +42,14 @@
 
         function entrar() {
             area.innerText = 'Tudo bem?';
-            area.style.background = 'green'
-            area.style.color = 'white'
+            area.style.background = 'green';
+            area.style.color = 'white';
         }
 
         function sair() {
-            area.innerText = 'boa sorte!'
-            area.style.background = 'yellowgreen'
-            ara.style.color = 'white'
+            area.innerText = 'boa sorte!';
+            area.style.background = 'yellowgreen';
+            ara.style.color = 'white';
         }
     </script>
 </body>
