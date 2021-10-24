@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+            background: rgb(97, 99, 250);
+            color: white;
+        }
+
+        input {
+            font: normal 18pt Arial;
+            border-radius: 10px;
+            border: solid;
+            width: 100px;
+            background: rgb(199, 198, 198);
+        }
+
+        .quadradoResultado {
+            display: inline;
+            border: solid black;
+            border-radius: 10px;
+            font: normal 18pt Arial;
+            background: rgb(240, 238, 238);
+            width: 50%; 
+            padding: 2px 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Somando Valores</h1>
+    </header>
+    
+    <!--Inputs e o resultado-->
+    <div>
+        <input type="number" name="primeiroNumero" id="primeiroNumero"> +
+        <input type="number" name="segundoNumero" id="segundoNumero"> =
+        <div class="quadradoResultado" id="resultado"></div>
+        <button onclick="somar()" id="botãoSoma">somar</button>
+    </div>
+
+    <script>
+        //função de soma e mudança na div do resultado
+        function somar() {
+            var input1 = window.document.getElementById('primeiroNumero');
+            var input2 = window.document.getElementById('segundoNumero');
+            var resultado = window.document.getElementById('resultado');
+            var numero1 = Number(input1.value);
+            var numero2 = Number(input2.value);
+            var soma = numero1 + numero2;
+
+                resultado.innerHTML = `${soma}`;
+                resultado.style.color = 'black';
+        }
+
+        primeiroNumero.focus();
+    </script>
+</body>
+</html>
