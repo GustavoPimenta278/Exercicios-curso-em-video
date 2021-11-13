@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    
+    <style>
+        .estiloQuadrado {
+            background: rgb(109, 109, 236);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            border: solid rgb(24, 22, 22);
+            border-radius: 30px;
+        }
+    </style>
+</head>
 
+<body>
+    <div id="quadrado" class='estiloQuadrado'>
+        Olá!
+    </div>
+    
+
+    <script>
+
+        var area = window.document.getElementById('quadrado')
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', sair)
+
+        function clicar () {
+            
+            area.innerText = 'fui clicado!';
+            area.style.color = 'purple';
+            area.style.background = 'orange';
+        }
+
+        function entrar() {
+            area.innerText = 'Tudo bem?';
+            area.style.background = 'green';
+            area.style.color = 'white';
+        }
+
+        function sair() {
+            area.innerText = 'boa sorte!';
+            area.style.background = 'yellowgreen';
+            ara.style.color = 'white';
+        }
+    </script>
+</body>
+</html>
